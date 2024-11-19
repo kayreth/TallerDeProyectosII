@@ -1,7 +1,10 @@
 <?php
-$customers = array();
-include 'views/templates/head.php';
-include 'views/templates/navbar.php';
+require_once 'backend/config/database.php';
+require_once 'backend/repository/CustomerRepository.php';
+
+$database = new Database();
+$customerRepo = new CustomerRepository($database);
+$customers = $customerRepo->getAllCustomers();
 ?>
 
 <div class="container mt-5">

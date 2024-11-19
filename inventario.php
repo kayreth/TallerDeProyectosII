@@ -1,5 +1,11 @@
 <?php
-$inventories = array();
+require_once 'backend/config/database.php';
+require_once 'backend/repository/InventoryRepository.php';
+
+$database = new Database();
+$inventoryRepo = new InventoryRepository($database);
+$inventories = $inventoryRepo->getAllInventoryMovements();
+
 include 'views/templates/head.php';
 include 'views/templates/navbar.php';
 ?>

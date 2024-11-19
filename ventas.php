@@ -1,4 +1,19 @@
 <?php
+require_once 'backend/config/database.php';
+require_once 'backend/repository/SaleRepository.php';
+$database = new Database();
+$saleRepo = new SaleRepository($database);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $cliente_id = $_POST['cliente_id'];
+    $tipo_comprobante = $_POST['tipo_comprobante'];
+    $articulo_id = $_POST['articulo_id'];
+    $cantidad = $_POST['cantidad'];
+
+    $saleRepo->createSale($cliente_id, $tipo_comprobante, $articulo_id, $cantidad);
+    $successMessage = "Venta registrada con éxito.";
+}
+
 include 'views/templates/head.php';
 include 'views/templates/navbar.php';
 ?>

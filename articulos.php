@@ -1,5 +1,11 @@
 <?php
-$articles = array();
+require_once 'backend/config/database.php';
+require_once 'backend/repository/ArticleRepository.php';
+
+$database = new Database();
+$articleRepo = new ArticleRepository($database);
+$articles = $articleRepo->getAllArticles();
+
 include 'views/templates/head.php';
 include 'views/templates/navbar.php';
 ?>
