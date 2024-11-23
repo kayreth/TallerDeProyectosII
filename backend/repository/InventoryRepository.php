@@ -15,7 +15,7 @@ class InventoryRepository {
                     i.cantidad AS cantidad, 
                     i.fecha_movimiento AS fecha_movimiento
                   FROM inventario i
-                  JOIN articulos a ON i.articulo_id = a.id"; // Ajusta los nombres de columnas según tu tabla
+                  JOIN articulos a ON i.articulo_id = a.id";
         $stmt = $this->db->prepare($query);
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_ASSOC);

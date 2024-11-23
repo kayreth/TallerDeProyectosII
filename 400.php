@@ -52,8 +52,8 @@
 </head>
 <body>
 	<div class="container">
-		<h1>404</h1>
-		<h2>Archivo no encontrado!</h2>
+		<h1>400</h1>
+		<h2>Error interno</h2>
     <p>Volver al <a href="/pdv" class="link">HOME</a></p>
 	</div>
 </body>

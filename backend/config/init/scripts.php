@@ -1,8 +1,8 @@
 <?php
-require_once __DIR__ . '/../config/database.php';
+exit();
+require_once '../core.php';
 
 try {
-    $database = new Database();
     $conn = $database->getConnection();
 
     $sql = "CREATE TABLE IF NOT EXISTS Clientes (
