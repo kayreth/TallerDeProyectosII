@@ -18,9 +18,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/pdv/ventas.php">Ventas</a>
                 </li>
-                <li class="nav-item">
+               <!--<li class="nav-item">
                     <a class="nav-link" href="/pdv/inventario.php">Inventario</a>
-                </li>
+                </li>-->
             </ul>
         </div>
     </div>

@@ -7,3 +7,20 @@ footer{
     align-items: center;
     width: 100%;
 }
+
+
+/**********--------------VENTAS--------------**********/
+
+.td-nombre{
+    width: 400px;
+}
+
+.td-cantidad{
+ width: 100px;
+}
+
+.td-cantidad input{
+ text-align: right;
+}
+
+/**********--------------VENTAS--------------**********/

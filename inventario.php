@@ -1,11 +1,12 @@
 <?php
-require_once 'backend/config/database.php';
+//back
+require_once 'backend/config/core.php';
 require_once 'backend/repository/InventoryRepository.php';
 
-$database = new Database();
-$inventoryRepo = new InventoryRepository($database);
-$inventories = $inventoryRepo->getAllInventoryMovements();
+//$inventoryRepo = new InventoryRepository($database);
+//$inventories = $inventoryRepo->getAllInventoryMovements();
 
+//front
 include 'views/templates/head.php';
 include 'views/templates/navbar.php';
 ?>
